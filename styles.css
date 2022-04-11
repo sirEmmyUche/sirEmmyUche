@@ -26,7 +26,7 @@ ul li{
     list-style: none;
 }
 
-.burger{
+#burger{
     display: none;
 }
 
@@ -44,20 +44,19 @@ ul li{
     opacity: 0;  
 }
 
-@keyframes pulse {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 100;
-    }
+.responsive {
+    position: absolute;
+    height: 50vh;
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40%;
+    width: 50%;
+    opacity: 100;  
 }
 
-.responsive{
-    animation: pulse 1s linear infinite;
-}
-
-.burger{
+#burger{
     display: block;
     z-index: 1;
 }
